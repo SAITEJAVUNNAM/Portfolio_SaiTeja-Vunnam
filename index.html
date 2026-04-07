@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saiteja Vunnam | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {margin:0; padding:0; box-sizing:border-box;}
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      overflow-x: hidden;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(15,23,42,0.9);
+      display: flex;
+      justify-content: center;
+      padding: 12px;
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #e2e8f0;
+      margin: 0 15px;
+      text-decoration: none;
+      transition: 0.3s;
+      font-weight: 500;
+    }
+
+    nav a:hover { color: #38bdf8; }
+
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(135deg,#1e293b,#0f172a);
+    }
+
+    header h1 { font-size: 3rem; color: #38bdf8; }
+    header p { margin-top: 10px; font-size: 1.2rem; color: #94a3b8; }
+
+    .btn {
+      margin-top: 15px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      background: #38bdf8;
+      color: #0f172a;
+      cursor: pointer;
+      transition: 0.3s;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 0.9rem;
+    }
+
+    .btn:hover { background: #0ea5e9; }
+
+    section { padding: 80px 10%; }
+    h2 { margin-bottom: 20px; color: #38bdf8; }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover { transform: translateY(-5px); }
+
+    .skills span {
+      display: inline-block;
+      background: #334155;
+      padding: 8px 12px;
+      border-radius: 20px;
+      margin: 5px;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+    }
+
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<header>
+  <h1>Saiteja Vunnam</h1>
+  <p>Business Intelligence Analyst | Data Enthusiast</p>
+  <a class="btn" href="#contact">Hire Me</a>
+  <a class="btn" href="https://www.linkedin.com/in/saiteja-vunnam-5a4251166" target="_blank">LinkedIn</a>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>Analytical Business Intelligence Analyst with experience in data analytics, reporting, and dashboard development. Passionate about transforming data into actionable insights.</p>
+    <a class="btn" href="#projects">View Projects</a>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="card skills">
+    <span>Power BI</span>
+    <span>SQL</span>
+    <span>Python</span>
+    <span>Tableau</span>
+    <span>IBM Cognos</span>
+    <span>Excel</span>
+    <span>SAP ERP</span>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="card">
+    <h3>TCS - BI Analyst</h3>
+    <p>Developed dashboards, automated reports, and collaborated across teams.</p>
+    <a class="btn" href="#contact">Contact Me</a>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="card">
+    <h3>Hiring Process Analytics</h3>
+    <p>Analyzed salary, gender, and department trends.</p>
+    <a class="btn" href="#" target="_blank">View Project</a>
+  </div>
+
+  <div class="card">
+    <h3>Instagram Analytics</h3>
+    <p>Identified revenue optimization opportunities using SQL.</p>
+    <a class="btn" href="#" target="_blank">View Project</a>
+  </div>
+
+  <div class="card">
+    <h3>Traffic Pattern Analysis</h3>
+    <p>Predictive modeling and anomaly detection for traffic data.</p>
+    <a class="btn" href="#" target="_blank">View Project</a>
+  </div>
+
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    <p>Email: saiteja.vunnam@gmail.com</p>
+    <p>Phone: +48 729 442 535</p>
+
+    <a class="btn" href="mailto:saiteja.vunnam@gmail.com">Send Email</a>
+    <a class="btn" href="tel:+48729442535">Call</a>
+    <a class="btn" href="https://www.linkedin.com/in/saiteja-vunnam-5a4251166" target="_blank">LinkedIn</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Saiteja Vunnam</p>
+</footer>
+
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
